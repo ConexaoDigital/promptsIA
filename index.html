@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Biblioteca de eBooks</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#121212">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    
+    <style>
+        /* Configurações do Fundo Escuro */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo das Categorias */
+        .categoria {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .categoria h2 {
+            border-bottom: 2px solid #ff4081;
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: #ff4081;
+        }
+
+        /* Organização dos eBooks */
+        .grid-ebooks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        /* Cartão de cada eBook */
+        .cartao-ebook {
+            background-color: #2d2d2d;
+            border-left: 5px solid #00e676;
+            border-radius: 8px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cartao-ebook h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            color: #ffffff;
+        }
+
+        /* Botões bem visíveis */
+        .botoes {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: 0.2s;
+        }
+
+        /* Botão de Abrir/Visualizar (Destaque Principal) */
+        .btn-abrir {
+            background-color: #00e676;
+            color: #000000;
+        }
+
+        .btn-abrir:hover {
+            background-color: #00c853;
+        }
+
+        /* Botão de Baixar (Destaque Secundário) */
+        .btn-baixar {
+            background-color: transparent;
+            color: #00e676;
+            border: 2px solid #00e676;
+        }
+
+        .btn-baixar:hover {
+            background-color: rgba(0, 230, 118, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Meus Materiais e eBooks</h1>
+
+    <div class="categoria">
+        <h2>💅 Beleza e Estética</h2>
+        <div class="grid-ebooks">
+            <div class="cartao-ebook">
+                <h3>✂️ Mega Hair e Cabeleireira</h3>
+                <div class="botoes">
+                    <a href="pdfs/megahair.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/megahair.pdf" download="Mega_Hair" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>💅 Nail, Manicure</h3>
+                <div class="botoes">
+                    <a href="pdfs/nail_manicure.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/nail_manicure.pdf" download="Nail_Manicure" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>🖌️ Manicure e Nails Designer</h3>
+                <div class="botoes">
+                    <a href="pdfs/manicure_designer.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/manicure_designer.pdf" download="Manicure_Nails_Designer" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>✨ Nails Novo</h3>
+                <div class="botoes">
+                    <a href="pdfs/nails_novo.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/nails_novo.pdf" download="Nails_Novo" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h2>💼 Negócios e Profissões</h2>
+        <div class="grid-ebooks">
+            <div class="cartao-ebook">
+                <h3>🚀 Empreendedora</h3>
+                <div class="botoes">
+                    <a href="pdfs/empreendedora.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/empreendedora.pdf" download="Empreendedora" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>🚀 Empreendedora 2</h3>
+                <div class="botoes">
+                    <a href="pdfs/empreendedora2.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/empreendedora2.pdf" download="Empreendedora_2" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>👔 Profissional</h3>
+                <div class="botoes">
+                    <a href="pdfs/profissional.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/profissional.pdf" download="Profissional" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>🧁 Prompts Confeiteira</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompts_confeiteira.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompts_confeiteira.pdf" download="Prompts_Confeiteira" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>🩺 Prompts Área Medicina</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompts_medicina.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompts_medicina.pdf" download="Prompts_Medicina" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h2>📸 Ensaios, Estilos e Geral</h2>
+        <div class="grid-ebooks">
+            <div class="cartao-ebook">
+                <h3>💃 Modelo Sensual</h3>
+                <div class="botoes">
+                    <a href="pdfs/modelo_sensual.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/modelo_sensual.pdf" download="Modelo_Sensual" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>💎 Prompts Elegantes</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompts_elegantes.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompts_elegantes.pdf" download="Prompts_Elegantes" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>👫 Prompt Casal Exclusivo</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompt_casal.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompt_casal.pdf" download="Prompt_Casal" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>🧔 Prompt Masculino</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompt_masculino.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompt_masculino.pdf" download="Prompt_Masculino" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>📁 Prompts (Geral)</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompts.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompts.pdf" download="Prompts" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>📁 Prompts 2</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompts2.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompts2.pdf" download="Prompts_2" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>📖 E-book 2</h3>
+                <div class="botoes">
+                    <a href="pdfs/ebook2.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/ebook2.pdf" download="Ebook_2" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="categoria">
+        <h2>🎉 Datas Comemorativas</h2>
+        <div class="grid-ebooks">
+            <div class="cartao-ebook">
+                <h3>🎈 Prompts Aniversário</h3>
+                <div class="botoes">
+                    <a href="pdfs/prompts_aniversario.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/prompts_aniversario.pdf" download="Prompts_Aniversario" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+            <div class="cartao-ebook">
+                <h3>🎄 Clima Natal</h3>
+                <div class="botoes">
+                    <a href="pdfs/clima_natal.pdf" target="_blank" class="btn btn-abrir">👁️ Visualizar</a>
+                    <a href="pdfs/clima_natal.pdf" download="Clima_Natal" class="btn btn-baixar">⬇️ Baixar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('App ativado com sucesso!', reg))
+                .catch(err => console.log('Erro ao ativar app:', err));
+            });
+        }
+    </script>
+</body>
+</html>
